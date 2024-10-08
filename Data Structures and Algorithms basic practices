@@ -3,21 +3,50 @@ Engin Deniz Alpman
 
 <h2> Data Structures and Algorithms basic practices: </h2>
 
-< font color="red" > Proje 1
+Proje 1
 [22,27,16,2,18,6] -> Insertion Sort
 
-Yukarı verilen dizinin sort türüne göre aşamalarını yazınız.
-< /font > 
+1) Yukarı verilen dizinin sort türüne göre aşamalarını yazınız.
+* STEPS *
+1. start from index 0 and compare with index 1: [22, 27, *16*, 2, 18, 6] -> [22, 16, 27, 2, 18, 6]
+2.                                              [22, *16*, 27, 2, 18, 6] -> [16, 22, 27, 2, 18, 6]
+3.                                              [16, 22, 27, *2*, 18, 6] -> [16, 22, 2, 27, 18, 6]
+4.                                              [16, 22, *2*, 27, 18, 6] -> [16, 2, 22, 27, 18, 6]
+5.                                              [16, *2*, 22, 27, 18, 6] -> [2, 16, 22, 27, 18, 6]
 
-Big-O gösterimini yazınız.
+2) Big-O gösterimini yazınız.
 
-Time Complexity: Dizi sıralandıktan sonra 18 sayısı aşağıdaki case'lerden hangisinin kapsamına girer? Yazınız
-
-Average case: Aradığımız sayının ortada olması
-Worst case: Aradığımız sayının sonda olması
-Best case: Aradığımız sayının dizinin en başında olması.
+3) Time Complexity: Dizi sıralandıktan sonra 18 sayısı aşağıdaki case'lerden hangisinin kapsamına girer? Yazınız
+   Average case: Aradığımız sayının ortada olması
+   Worst case: Aradığımız sayının sonda olması
+   Best case: Aradığımız sayının dizinin en başında olması.
 .
+A1) Insertion sort starts from the first element, comparing each subsequent element with those before it, swapping placements when a smaller element is found; otherwise, it moves on. In best case, it is already sorted and time complexity becomes O(n).
+In worst case, time complexity becomes O(n^2).
 
+A2) Big-O notation is O(n^2)
 
+A3) Because of 18 is an element in the middle, it becomes average case to search.
 
 [7,3,5,8,2,9,4,15,6] dizisinin Selection Sort'a göre ilk 4 adımını yazınız.
+
+* STEPS *
+- Find the Minimum Element (0th Index):
+Scan the entire array to find the smallest element: 2.
+Swap 2 with the first element (7).
+[2, 3, 5, 8, 7, 9, 4, 15, 6]
+
+- Find the Minimum Element (1st Index):
+Scan the remaining array (3, 5, 8, 7, 9, 4, 15, 6) to find the smallest element: 3.
+3 is already in the correct position, no swap needed.
+[2, 3, 5, 8, 7, 9, 4, 15, 6]
+
+- Find the Minimum Element (2nd Index):
+Scan the remaining array (5, 8, 7, 9, 4, 15, 6) to find the smallest element: 4.
+Swap 4 with 5.
+[2, 3, 4, 8, 7, 9, 5, 15, 6]
+
+- Find the Minimum Element (3rd Index):
+Scan the remaining array (8, 7, 9, 5, 15, 6) to find the smallest element: 5.
+Swap 5 with 8.
+[2, 3, 4, 5, 7, 9, 8, 15, 6]
