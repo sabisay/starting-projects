@@ -50,3 +50,35 @@ Swap 4 with 5.
 Scan the remaining array (8, 7, 9, 5, 15, 6) to find the smallest element: 5.
 Swap 5 with 8.
 [2, 3, 4, 5, 7, 9, 8, 15, 6]
+
+
+
+
+Proje 2
+[16,21,11,8,12,22] -> Merge Sort
+
+Yukarıdaki dizinin sort türüne göre aşamalarını yazınız.
+Big-O gösterimini yazınız.
+- Divide the Array:
+[16, 21, 11] and [8, 12, 22]
+- Divide both halves again:
+[16], [21, 11] and [8], [12, 22]
+- Sort each group inside:
+[16], [11, 21] and [8], [12, 22]
+- Merge first half:
+[11, 16, 21]
+- Merge second half:
+[8, 12, 22]
+
+
+
+Proje 3
+[7, 5, 1, 8, 3, 6, 0, 9, 4, 2] dizisinin Binary-Search-Tree aşamalarını yazınız.
+
+Örnek: root x'dir. root'un sağından y bulunur. Solunda z bulunur vb.
+firstly root is 7.
+- 5 is smaller than 7 so goes left.
+- 1 is less than 7 goes left, and less than 5 goes left again.
+- 8 is bigger than 7 so goes right of 7.
+- 3 is smaller than 7 goes left, and smaller than 5 goes left, bigger than 1 goes right of 1.
+- 6 is smaller than 7 goes left, bigger than 5 goes right of 5.
